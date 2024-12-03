@@ -4,7 +4,7 @@ import time
 
 def get_serv(port):
     try:
-        return socket.getservbyname(port)
+        return socket.getservbyport(port)
     except OSError:
         return 'unassigned'
 
