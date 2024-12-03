@@ -24,4 +24,5 @@ def main(target, port_count):
             print(f' Port: {o:5} Service: {o_port[o]}')
 
 if __name__ == "__main__":
-    main()
+    target = input('\n[*] Input Domain or ip addres for the scan >>>')
+    main(target, 65535)
